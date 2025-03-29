@@ -1,0 +1,218 @@
+/* Badges base style */
+.inboxino-framework .badge {
+  margin-left: 0.4rem;
+  display: inline-block;
+  padding: 0.325rem 0.5rem;
+  font-weight: 400;
+  border-radius: 0.425rem;
+  line-height: normal;
+}
+
+/* Warning badges */
+.inboxino-framework .badge.warning {
+  color: #071437;
+  background-color: #ffc700;
+}
+
+/* Danger badges */
+.inboxino-framework .badge.danger {
+  color: #ffffff;
+  background-color: #f1416c;
+}
+
+/* Success badges */
+.inboxino-framework .badge.success {
+  color: #ffffff;
+  background-color: #50cd89;
+}
+
+/* Light badges */
+.inboxino-framework .badge.light {
+  color: #78829d;
+  background-color: #f9f9f9;
+}
+
+/* Info badges */
+.inboxino-framework .badge.info {
+  color: #ffffff;
+  background-color: #7239ea;
+}
+
+/* Codes element style */
+.inboxino-framework code {
+  font-weight: 400;
+  color: #b93993;
+  background-color: #f1f3f8;
+  border-radius: 0.3rem;
+  line-height: inherit;
+  padding: 0.1rem 0.4rem;
+  margin: 0 0.25rem;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+/* Time field style */
+.csf-field-repeater .csf-field-text.inboxino-time input {
+    width: unset;
+}
+
+/* Show form result */
+.inboxino-csf-form-result {
+    display: block !important;
+}
+
+/* Profile picture avatar */
+.inboxino-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Different styles for status */
+.inboxino-sent, .inboxino-error, .inboxino-sending,
+.inboxino-pending, .inboxino-cancel, .inboxino-need-pay {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.inboxino-sent {
+    color: #50cd89;
+    background-color: #e8fff3;
+}
+
+.inboxino-pending, .inboxino-sending {
+    color: #ffc700;
+    background-color: #fff8dd;
+}
+
+.inboxino-cancel {
+    color: #333333;
+    background-color: #ccc;
+}
+
+.inboxino-error, .inboxino-need-pay {
+    background-color: #FFCDD2;
+    color: #D32F2F;
+}
+
+/* Styles related to tooltip */
+.inboxino-error {
+    position: relative;
+}
+
+.inboxino-error::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inboxino-error:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Styles related to messages table */
+.inboxino-table-bot {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.inboxino-table-date {
+    display: block;
+    font-size: 0.8em;
+    color: #7e8299;
+}
+
+.inboxino-table-platform {
+    background-color: #fff;
+    border: 1px dashed #009ef7;
+    border-radius: 6.175px;
+    max-width: 50px;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.inboxino-table-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.inboxino-table-logo {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+.inboxino-table-time {
+    color: #7e8299;
+    background-color: #f5f8fa;
+    font-weight: 600;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+/* Styles related to message details page */
+.inboxino-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inboxino-message-details {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eff2f5;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.03);
+    background: #fff;
+    border-radius: 30px;
+    margin: 10px 15px;
+    padding: 10px 20px;
+}
+
+.inboxino-message-item {
+    border-bottom: 1px dashed #e4e6ef;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.inboxino-message-item:last-child {
+    border-bottom: none;
+}
+
+.inboxino-label {
+    font-weight: 600;
+    display: inline-block;
+    max-width: 40%;
+}
+
+.inboxino-content {
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.inboxino-grey-box {
+    color: #7e8299;
+    background-color: #f5f8fa;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
