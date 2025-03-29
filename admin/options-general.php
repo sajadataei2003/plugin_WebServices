@@ -10,14 +10,14 @@ CSF::createSection(INBOXINO_FRAMEWORK_PREFIX, array(
         // زیرعنوان API
         array(
             'type' => 'subheading',
-            'content' => 'پیکربندی وب‌سرویس اینباکسینو',
+            'content' => 'پیکربندی وب‌سرویس اقاصدک',
         ),
         // فیلد توکن API
         array(
             'id' => 'api_token',
             'type' => 'text',
             'title' => 'توکن API',
-            'desc' => 'برای دریافت توکن، به بخش <a href="https://app.inboxino.com/services/api" target="_blank">وب‌سرویس</a> در پنل اینباکسینو مراجعه کنید و مقدار آن را در اینجا وارد نمایید.',
+            'desc' => 'برای دریافت توکن، به بخش <a href="https://app.inboxino.com/services/api" target="_blank">وب‌سرویس</a> در پنل قاصدک مراجعه کنید و مقدار آن را در اینجا وارد نمایید.',
         ),
         // گزینه‌های انتخابی پلتفرم‌ها
         array(
@@ -109,7 +109,7 @@ function inboxino_api_callback()
     }
     
     echo '<span class="badge success">اتصال موفق</span>';
-    echo 'ارتباط با وب‌سرویس اینباکسینو برقرار شد.';
+    echo 'ارتباط با وب‌سرویس قاصدک برقرار شد.';
     
     if (!empty($user->bot->name)) {
         echo '<code>' . esc_html($user->bot->name) . '</code>';
@@ -120,6 +120,6 @@ function inboxino_api_callback()
     foreach (inboxino_get_not_connected_platforms($user->bot->platforms) as $platform) {
         echo '<div style="margin-bottom: 7px"></div>';
         echo '<span class="badge danger">پلتفرم غیرفعال</span>';
-        echo 'پلتفرم <strong>' . esc_html(INBOXINO_PLATFORMS[$platform]) . '</strong> در اینباکسینو غیرفعال است. لطفاً در پنل اینباکسینو این پلتفرم را فعال کنید.';
+        echo 'پلتفرم <strong>' . esc_html(INBOXINO_PLATFORMS[$platform]) . '</strong> در قاصدک غیرفعال است. لطفاً در پنل قاصدک این پلتفرم را فعال کنید.';
     }
 }

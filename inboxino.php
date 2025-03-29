@@ -5,7 +5,7 @@
  * Plugin URI: https://app.inboxino.com/
  * Description: افزونه ارسال پیام و اعلان در واتساپ، تلگرام، بله، ایتا و روبیکا. ارسال پیام هنگام رویدادهای مختلف (ثبت نام، ورود کاربر، ارسال نظرات، پر کردن فرم ها) به کاربران و مدیران سایت. امکان اتصال به ووکامرس، گرویتی فرم و المنتور
  * Version: 2.0.1
- * Author: تیم اینباکسینو
+ * Author: تیم قاصدک
  * Author URI: https://inboxino.com/
  * Text Domain: inboxino
  * Requires at least: 6.0

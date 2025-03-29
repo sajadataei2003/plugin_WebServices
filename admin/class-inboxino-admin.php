@@ -482,8 +482,8 @@ class  InboxinoAdmin
     {
         // Create options framework
         CSF::createOptions(INBOXINO_FRAMEWORK_PREFIX, array(
-            'framework_title' => 'اینباکسینو',
-            'menu_title' => 'اینباکسینو',
+            'framework_title' => 'قاصدک',
+            'menu_title' => 'قاصدک',
             'menu_slug' => 'inboxino-framework',
             'menu_type' => 'menu',
             'menu_icon' => 'dashicons-email-alt',
