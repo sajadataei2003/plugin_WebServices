@@ -67,7 +67,6 @@ CSF::createSection(INBOXINO_FRAMEWORK_PREFIX, array(
                 ),
             ),
         ),
-        // زیرعنوان متای شماره موبایل کاربران
         array(
             'type' => 'subheading',
             'content' => 'تنظیمات متا شماره تلفن کاربران',
